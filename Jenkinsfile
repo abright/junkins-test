@@ -2,12 +2,12 @@ pipeline {
     agent any
     stages {
         stage('something') {
-            always {
+            steps {
                 echo 'something goes here'
             }
         }
         stage('something else') {
-            always {
+            steps {
                 echo 'something else goes here'
             }
         }
