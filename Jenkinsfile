@@ -2,18 +2,18 @@ pipeline {
     agent any
     stages {
         stage('something') {
-            steps {
+            always {
                 echo 'something goes here'
             }
         }
         stage('something else') {
-            steps {
+            always {
                 echo 'something else goes here'
             }
         }
     }
     post {
-        steps {
+        always {
             echo 'all done!'
         }
     }
