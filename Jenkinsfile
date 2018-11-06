@@ -6,6 +6,11 @@ pipeline {
                 echo 'something goes here'
             }
         }
+        stage('something else') {
+            steps {
+                echo 'something else goes here'
+            }
+        }
     }
     post {
         steps {
