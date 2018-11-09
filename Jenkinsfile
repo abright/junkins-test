@@ -3,12 +3,8 @@ pipeline {
     stages {
         stage('something') {
             steps {
-                echo 'something goes here'
-            }
-        }
-        stage('something else') {
-            steps {
-                echo 'something else goes here'
+                def gitvars = checkout scm
+                echo 'running from branch: ${gitvars.GIT_BRANCH}'
             }
         }
     }
