@@ -4,7 +4,7 @@ pipeline {
         stage('something') {
             steps {
                 checkout scm
-                echo 'running from branch: ${BRANCH_NAME}'
+                echo "running from branch: ${BRANCH_NAME}"
             }
         }
     }
