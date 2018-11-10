@@ -20,7 +20,7 @@ pipeline {
                 branch 'release'
             }
             steps {
-                echo "we release now"
+                echo "we release now wtf"
             }
         }
     }
